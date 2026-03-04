@@ -15,13 +15,17 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo apt update
-          sudo apt install -y python3-pip build-essential git wget openjdk-11-jdk unzip
+          sudo apt install -y python3-pip build-essential git wget unzip openjdk-11-jdk
           pip3 install --upgrade pip
           pip3 install buildozer cython
 
-      - name: Build APK
+      - name: Initialize Buildozer (Install Android SDK/NDK)
         run: |
-          buildozer android debug
+          buildozer android debug deploy run || true
+          # The first run will download SDK/NDK and build-tools
+
+      - name: Build APK
+        run: buildozer android debug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
