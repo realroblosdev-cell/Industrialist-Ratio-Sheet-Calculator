@@ -1,0 +1,1755 @@
+{
+  "machines": {
+
+    "coal_drill": {
+      "name": "Coal Drill",
+      "category": "Extractor",
+      "cost": 50,
+      "pollution_per_h": 0.864,
+      "recipes": [
+        {
+          "outputs": [{"item": "Coal", "quantity": 1}],
+          "inputs": [],
+          "duration_s": 4,
+          "power_input_mf_per_s": 120
+        }
+      ]
+    },
+
+    "copper_drill": {
+      "name": "Copper Drill",
+      "category": "Extractor",
+      "cost": 190,
+      "pollution_per_h": 0.108,
+      "recipes": [
+        {
+          "outputs": [{"item": "Raw Copper", "quantity": 1}],
+          "inputs": [],
+          "duration_s": 9,
+          "power_input_mf_per_s": 360
+        }
+      ]
+    },
+
+    "iron_drill": {
+      "name": "Iron Drill",
+      "category": "Extractor",
+      "cost": 350,
+      "pollution_per_h": 0.432,
+      "recipes": [
+        {
+          "outputs": [{"item": "Raw Iron", "quantity": 1}],
+          "inputs": [],
+          "duration_s": 15,
+          "power_input_mf_per_s": 1200
+        }
+      ]
+    },
+
+    "water_pump": {
+      "name": "Water Pump",
+      "category": "Extractor",
+      "cost": 60,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Water", "quantity": 1.35}],
+          "inputs": [],
+          "duration_s": 1,
+          "power_input_mf_per_s": 600
+        }
+      ]
+    },
+
+    "craft_assembler": {
+      "name": "Craft Assembler",
+      "category": "Machines",
+      "cost": 1000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Chair", "quantity": 1}],
+          "inputs": [{"item": "Planks", "quantity": 12},{"item": "Nails", "quantity": 20}],
+          "duration_s": 15,
+          "power_input_mf_per_s": 4000
+        },
+        {
+          "outputs": [{"item": "Tire", "quantity": 1}],
+          "inputs": [{"item": "Tire Rim", "quantity": 1},{"item": "Rubber", "quantity": 4}],
+          "duration_s": 15,
+          "power_input_mf_per_s": 4000
+        },
+        {
+          "outputs": [{"item": "Tire Rim", "quantity": 1}],
+          "inputs": [{"item": "Aluminium Ingot", "quantity": 2},{"item": "Steel Ingot", "quantity": 4}],
+          "duration_s": 15,
+          "power_input_mf_per_s": 4000
+        },
+        {
+          "outputs": [{"item": "Insulated Wire", "quantity": 40}],
+          "inputs": [{"item": "Rubber", "quantity": 20},{"item": "Copper Wire", "quantity": 40}],
+          "duration_s": 15,
+          "power_input_mf_per_s": 4000
+        },
+        {
+          "outputs": [{"item": "Crankshaft", "quantity": 1}],
+          "inputs": [{"item": "Steel Rod", "quantity": 2},{"item": "Gear", "quantity": 4}],
+          "duration_s": 15,
+          "power_input_mf_per_s": 4000
+        },
+        {
+          "outputs": [{"item": "Gearbox", "quantity": 1}],
+          "inputs": [{"item": "Plastic Casing", "quantity": 2},{"item": "Crankshaft", "quantity": 1}],
+          "duration_s": 15,
+          "power_input_mf_per_s": 4000
+        },
+        {
+          "outputs": [{"item": "Toy", "quantity": 1}],
+          "inputs": [{"item": "Black Dye", "quantity": 6},{"item": "Planks", "quantity": 3}],
+          "duration_s": 15,
+          "power_input_mf_per_s": 4000
+        },
+        {
+          "outputs": [{"item": "Present Box", "quantity": 2}],
+          "inputs": [{"item": "Black Dye", "quantity": 9},{"item": "Paper", "quantity": 6}],
+          "duration_s": 15,
+          "power_input_mf_per_s": 4000
+        }
+      ]
+    },
+    
+    "electric_furnace": {
+      "name": "Electric Furnace",
+      "category": "Machines",
+      "cost": 190,
+      "pollution_per_h": 0.158,
+      "recipes": [
+        {
+          "outputs": [{"item": "Liquid Copper", "quantity": 1}],
+          "inputs": [{"item": "Raw Copper", "quantity": 1}],
+          "duration_s": 3,
+          "power_input_mf_per_s": 400
+        },
+        {
+          "outputs": [{"item": "Liquid Iron", "quantity": 1}],
+          "inputs": [{"item": "Raw Iron", "quantity": 1}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 240
+        },
+        {
+          "outputs": [{"item": "Liquid Copper", "quantity": 5.2}],
+          "inputs": [{"item": "Copper Mix", "quantity": 2.67}],
+          "duration_s": 3,
+          "power_input_mf_per_s": 400
+        },
+        {
+          "outputs": [{"item": "Liquid Iron", "quantity": 7}],
+          "inputs": [{"item": "Iron Mix", "quantity": 3.2}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 240
+        },
+        {
+          "outputs": [{"item": "Liquid Sulfur", "quantity": 10}],
+          "inputs": [{"item": "Sulfur", "quantity": 5}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 240
+        }
+      ]
+    },
+
+    "ingot_molder": {
+      "name": "Ingot Molder",
+      "category": "Machines",
+      "cost": 150,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Copper Ingot", "quantity": 2}],
+          "inputs": [{"item": "Liquid Copper", "quantity": 4}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 150
+        },
+        {
+          "outputs": [{"item": "Iron Ingot", "quantity": 2}],
+          "inputs": [{"item": "Liquid Iron", "quantity": 4}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 150
+        },
+        {
+          "outputs": [{"item": "Gold Ingot", "quantity": 2}],
+          "inputs": [{"item": "Liquid Gold", "quantity": 4}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 150
+        },
+        {
+          "outputs": [{"item": "Ferroaluminium Alloy Ingot", "quantity": 2}],
+          "inputs": [{"item": "Molten Ferroaluminium Alloy", "quantity": 4}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 150
+        },
+        {
+          "outputs": [{"item": "Purple Gold", "quantity": 2}],
+          "inputs": [{"item": "Molten Purple Gold", "quantity": 4}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 150
+        },
+        {
+          "outputs": [{"item": "Aluminium Ingot", "quantity": 2}],
+          "inputs": [{"item": "Liquid Aluminium", "quantity": 4}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 150
+        },
+        {
+          "outputs": [{"item": "Glass", "quantity": 2}],
+          "inputs": [{"item": "Liquid Glass", "quantity": 4}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 150
+        },
+        {
+          "outputs": [{"item": "Lead Ingot", "quantity": 4}],
+          "inputs": [{"item": "Liquid Lead", "quantity": 8}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 150
+        },
+        {
+          "outputs": [{"item": "Brass Ingot", "quantity": 4}],
+          "inputs": [{"item": "Liquid Brass", "quantity": 8}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 150
+        }
+      ]
+    },
+
+    "press": {
+      "name": "Press",
+      "category": "Machines",
+      "cost": 409,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Copper Plate", "quantity": 1}],
+          "inputs": [{"item": "Copper Ingot", "quantity": 1}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 1000
+        },
+        {
+          "outputs": [{"item": "Iron Plate", "quantity": 1}],
+          "inputs": [{"item": "Iron Ingot", "quantity": 1}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 2000
+        },
+        {
+          "outputs": [{"item": "Steel Plate", "quantity": 1}],
+          "inputs": [{"item": "Steel Ingot", "quantity": 1}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 12500
+        },
+        {
+          "outputs": [{"item": "Plank2", "quantity": 0.25}],
+          "inputs": [{"item": "Planks", "quantity": 1}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 6250
+        },
+        {
+          "outputs": [{"item": "Iron Plate2", "quantity": 0.25}],
+          "inputs": [{"item": "Iron Plate", "quantity": 1}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 6250
+        }
+      ]
+    },
+
+    "roller": {
+      "name": "Roller",
+      "category": "Machines",
+      "cost": 411,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Copper Wire", "quantity": 12}],
+          "inputs": [{"item": "Copper Plate", "quantity": 2}],
+          "duration_s": 8,
+          "power_input_mf_per_s": 500
+        },
+        {
+          "outputs": [{"item": "Iron Plate", "quantity": 2}],
+          "inputs": [{"item": "Iron Coil", "quantity": 4}],
+          "duration_s": 8,
+          "power_input_mf_per_s": 750
+        },
+        {
+          "outputs": [{"item": "Steel Rod", "quantity": 2}],
+          "inputs": [{"item": "Steel Ingot", "quantity": 2}],
+          "duration_s": 8,
+          "power_input_mf_per_s": 6250
+        },
+        {
+          "outputs": [{"item": "Gear", "quantity": 2}],
+          "inputs": [{"item": "Steel Plate", "quantity": 2}],
+          "duration_s": 8,
+          "power_input_mf_per_s": 6250
+        },
+        {
+          "outputs": [{"item": "Nails", "quantity": 16}],
+          "inputs": [{"item": "Iron Ingot", "quantity": 2}],
+          "duration_s": 8,
+          "power_input_mf_per_s": 750
+        },
+        {
+          "outputs": [{"item": "Gold Wire", "quantity": 20}],
+          "inputs": [{"item": "Gold Ingot", "quantity": 2}],
+          "duration_s": 8,
+          "power_input_mf_per_s": 7500
+        }
+      ]
+    },
+
+    "sawmill": {
+      "name": "Sawmill",
+      "category": "Machines",
+      "cost": 800,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Cut Oak Log", "quantity": 2}],
+          "inputs": [{"item": "Oak Log", "quantity": 1}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 3000
+        },
+        {
+          "outputs": [{"item": "Chunk Plank", "quantity": 1}],
+          "inputs": [{"item": "Cut Oak Log", "quantity": 1}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 3000
+        },
+        {
+          "outputs": [{"item": "Planks", "quantity": 3}],
+          "inputs": [{"item": "Chunk Plank", "quantity": 1}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 3000
+        },
+        {
+          "outputs": [{"item": "Iron Plate", "quantity": 4}],
+          "inputs": [{"item": "Iron Ingot", "quantity": 1}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 3000
+        }
+      ]
+    },
+
+    "tree": {
+      "name": "Tree",
+      "category": "Modular",
+      "cost": 80,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Oak Log", "quantity": 1}],
+          "inputs": [],
+          "duration_s": 345,
+          "power_input_mf_per_s": 0
+        }
+      ]
+    },
+
+
+    "boiler": {
+      "name": "Boiler",
+      "category": "Machines",
+      "cost": 900,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Used Water", "quantity": 3}, {"item": "Steam", "quantity": 90}],
+          "inputs": [{"item": "Water", "quantity": 3}, {"item": "Hot Water", "quantity": 3}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 0
+        }
+      ]
+    },
+
+    "oil_rig": {
+      "name": "Oil Rig",
+      "category": "Machines",
+      "cost": 1200,
+      "pollution_per_h": 0.0288,
+      "recipes": [
+        {
+          "outputs": [{"item": "Crude Oil", "quantity": 0.12}],
+          "inputs": [],
+          "duration_s": 1,
+          "power_input_mf_per_s": 0
+        }
+      ]
+    },
+
+    "water_pump2": {
+      "name": "Water Pump2",
+      "category": "Machines",
+      "cost": 6000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Water", "quantity": 36}],
+          "inputs": [],
+          "duration_s": 6,
+          "power_input_mf_per_s": 700
+        }
+      ]
+    },
+
+    "quarry-soil": {
+      "name": "Quarry (Clay + Soil)",
+      "category": "Machines",
+      "cost": 1500,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Soil", "quantity": 120},{"item": "Clay", "quantity": 120}],
+          "inputs": [{"item": "Water", "quantity": 240}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 50000
+        }
+      ]
+    },
+
+    "quarry-sand": {
+      "name": "Quarry (Sand)",
+      "category": "Machines",
+      "cost": 1500,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Sand", "quantity": 120}],
+          "inputs": [{"item": "Water", "quantity": 240}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 50000
+        }
+      ]
+    },
+
+    "quarry-limestone": {
+      "name": "Quarry (Limestone)",
+      "category": "Machines",
+      "cost": 1500,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Limestone", "quantity": 120}],
+          "inputs": [{"item": "Water", "quantity": 240}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 50000
+        }
+      ]
+    },
+
+    "firebox": {
+      "name": "Firebox",
+      "category": "Machines",
+      "cost": 550,
+      "pollution_per_h": 1.08,
+      "recipes": [
+        {
+          "outputs": [{"item": "Hot Water", "quantity": 6}],
+          "inputs": [{"item": "Coal", "quantity": 1}, {"item": "Water", "quantity": 6}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 0
+        },
+        {
+          "outputs": [{"item": "Hot Filtered Water", "quantity": 6}],
+          "inputs": [{"item": "Coal", "quantity": 1}, {"item": "Filtered Water", "quantity": 6}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 0
+        },
+        {
+          "outputs": [{"item": "Hot Distilled Water", "quantity": 6}],
+          "inputs": [{"item": "Coal", "quantity": 1}, {"item": "Distilled Water", "quantity": 6}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 0
+        }
+      ]
+    },
+
+    "concrete-plant": {
+      "name": "Concrete Plant",
+      "category": "Machines",
+      "cost": 2000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Clay Brick", "quantity": 10}],
+          "inputs": [{"item": "Clay", "quantity": 10}, {"item": "Water", "quantity": 60}],
+          "duration_s": 10,
+          "power_input_mf_per_s": 4000
+        },
+        {
+          "outputs": [{"item": "Clay Brick", "quantity": 15}],
+          "inputs": [{"item": "Clay", "quantity": 10}, {"item": "Limestone", "quantity": 10}, {"item": "Water", "quantity": 60}],
+          "duration_s": 10,
+          "power_input_mf_per_s": 4000
+        },
+        {
+          "outputs": [{"item": "Clay Brick", "quantity": 20}],
+          "inputs": [{"item": "Clay", "quantity": 10}, {"item": "Iron Powder", "quantity": 10}, {"item": "Water", "quantity": 60}],
+          "duration_s": 10,
+          "power_input_mf_per_s": 4000
+        },
+        {
+          "outputs": [{"item": "Wet Concrete", "quantity": 20}],
+          "inputs": [{"item": "Cement", "quantity": 10}, {"item": "Aggregate", "quantity": 20}, {"item": "Water", "quantity": 60}],
+          "duration_s": 10,
+          "power_input_mf_per_s": 4000
+        },
+        {
+          "outputs": [{"item": "Concrete Block", "quantity": 20}],
+          "inputs": [{"item": "Wet Concrete", "quantity": 20}, {"item": "Water", "quantity": 10}],
+          "duration_s": 10,
+          "power_input_mf_per_s": 4000
+        },
+        {
+          "outputs": [{"item": "Reinforced Concrete Block", "quantity": 10}],
+          "inputs": [{"item": "Wet Concrete", "quantity": 20}, {"item": "Steel Rod", "quantity": 40}],
+          "duration_s": 10,
+          "power_input_mf_per_s": 4000
+        }
+      ]
+    },
+
+    "crude_oil_seperator": {
+      "name": "Crude Oil Seperator",
+      "category": "Machines",
+      "cost": 1500,
+      "pollution_per_h": 0.432,
+      "recipes": [
+        {
+          "outputs": [{"item": "Crude Diesel", "quantity": 0.675}, {"item": "Gasoline", "quantity": 0.3}, {"item": "Residue", "quantity": 0.3}],
+          "inputs": [{"item": "Hot Hot Crude Oil", "quantity": 1.5}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 0
+        }
+      ]
+    },
+
+    "diesel_refinery": {
+      "name": "Diesel Refinery",
+      "category": "Machines",
+      "cost": 1000,
+      "pollution_per_h": 0.216,
+      "recipes": [
+        {
+          "outputs": [{"item": "Poor Quality Diesel", "quantity": 0.41}, {"item": "Residue", "quantity": 0.04}],
+          "inputs": [{"item": "Crude Diesel", "quantity": 0.45}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 1000
+        },
+        {
+          "outputs": [{"item": "Diesel", "quantity": 0.37}, {"item": "Residue", "quantity": 0.04}],
+          "inputs": [{"item": "Poor Quality Diesel", "quantity": 0.41}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 1000
+        },
+        {
+          "outputs": [{"item": "Refined Diesel", "quantity": 0.34}, {"item": "Residue", "quantity": 0.03}],
+          "inputs": [{"item": "Diesel", "quantity": 0.37}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 1000
+        },
+        {
+          "outputs": [{"item": "Gasoline", "quantity": 0.31}, {"item": "Residue", "quantity": 0.03}],
+          "inputs": [{"item": "Refined Diesel", "quantity": 0.34}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 1000
+        }
+      ]
+    },
+
+    "filtration_plant": {
+      "name": "Filtration Plant",
+      "category": "Machines",
+      "cost": 20000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Filtered Water", "quantity": 3}],
+          "inputs": [{"item": "Water", "quantity": 4}],
+          "duration_s": 2,
+          "power_input_mf_per_s": 7500
+        },
+        {
+          "outputs": [{"item": "Crude Diesel", "quantity": 2.4}],
+          "inputs": [{"item": "Gasoline", "quantity": 4}],
+          "duration_s": 2,
+          "power_input_mf_per_s": 7500
+        },
+        {
+          "outputs": [{"item": "Machine Oil", "quantity": 2.4}],
+          "inputs": [{"item": "Refined Diesel", "quantity": 4}],
+          "duration_s": 2,
+          "power_input_mf_per_s": 7500
+        },
+        {
+          "outputs": [{"item": "Crude Oil", "quantity": 3}],
+          "inputs": [{"item": "Heavy Oil", "quantity": 4}],
+          "duration_s": 2,
+          "power_input_mf_per_s": 7500
+        }
+      ]
+    },
+
+    "grinder": {
+      "name": "Grinder",
+      "category": "Machines",
+      "cost": 10000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Black Dye", "quantity": 3}],
+          "inputs": [{"item": "Coal", "quantity": 4}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        },
+        {
+          "outputs": [{"item": "Paper", "quantity": 3}],
+          "inputs": [{"item": "Oak Log", "quantity": 4},{"item": "Water", "quantity": 10}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        },
+        {
+          "outputs": [{"item": "Iron Powder", "quantity": 1.9}],
+          "inputs": [{"item": "Raw Iron", "quantity": 3.2}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        },
+        {
+          "outputs": [{"item": "Iron Powder", "quantity": 1.9}],
+          "inputs": [{"item": "Raw Iron", "quantity": 3.2}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        },
+        {
+          "outputs": [{"item": "Iron Powder", "quantity": 0.5}],
+          "inputs": [{"item": "Iron Ingot", "quantity": 6}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        },
+        {
+          "outputs": [{"item": "Copper Powder", "quantity": 2.66}],
+          "inputs": [{"item": "Raw Copper", "quantity": 5.33}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        },
+        {
+          "outputs": [{"item": "Copper Powder", "quantity": 0.5}],
+          "inputs": [{"item": "Copper Ingot", "quantity": 6}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        },
+        {
+          "outputs": [{"item": "Sand", "quantity": 10}],
+          "inputs": [{"item": "Gravel", "quantity": 8}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        },
+        {
+          "outputs": [{"item": "Crushed Bauxite", "quantity": 6}],
+          "inputs": [{"item": "Bauxite Residue", "quantity": 8}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        },
+        {
+          "outputs": [{"item": "Alumina Dust", "quantity": 4}],
+          "inputs": [{"item": "Alumina", "quantity": 4}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        },
+        {
+          "outputs": [{"item": "Gold Ingot", "quantity": 0.5}],
+          "inputs": [{"item": "Microchip Scrap", "quantity": 5}, {"item": "Sulferic Acid", "quantity": 0.5}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        },
+        {
+          "outputs": [{"item": "Gravel", "quantity": 12}],
+          "inputs": [{"item": "Soil", "quantity": 12}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        },
+        {
+          "outputs": [{"item": "Gravel", "quantity": 12}],
+          "inputs": [{"item": "Rock", "quantity": 12}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        },
+        {
+          "outputs": [{"item": "Raw Iron", "quantity": 6}],
+          "inputs": [{"item": "Shallow Earth Fragment", "quantity": 6}, {"item": "Filtered Water", "quantity": 4}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        },
+        {
+          "outputs": [{"item": "Rock", "quantity": 6}],
+          "inputs": [{"item": "Shallow Earth Fragment", "quantity": 6}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        },
+        {
+          "outputs": [{"item": "Shallow Earth Fragment", "quantity": 6}],
+          "inputs": [{"item": "Medium Earth Fragment", "quantity": 3}, {"item": "Machine Oil", "quantity": 2}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        },
+        {
+          "outputs": [{"item": "Treated Rock", "quantity": 6}],
+          "inputs": [{"item": "Deep Earth Fragment", "quantity": 3}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        },
+        {
+          "outputs": [{"item": "Rich Soil", "quantity": 6}],
+          "inputs": [{"item": "Treated Rock", "quantity": 6}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 33000
+        }
+      ]
+    },
+
+    "kiln": {
+      "name": "Kiln",
+      "category": "Machines",
+      "cost": 3200,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Brick", "quantity": 30}],
+          "inputs": [{"item": "Clay Brick", "quantity": 30}],
+          "duration_s": 60,
+          "power_input_mf_per_s": 7220
+        }
+      ]
+    },
+
+    "liquid_boiler": {
+      "name": "Liquid Boiler",
+      "category": "Machines",
+      "cost": 900,
+      "pollution_per_h": 0.184,
+      "recipes": [
+        {
+          "outputs": [{"item": "Hot Hot Crude Oil", "quantity": 0.75}],
+          "inputs": [{"item": "Crude Oil", "quantity": 0.75}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 10000
+        }
+      ]
+    },
+
+    "raw_mill": {
+      "name": "Raw Mill",
+      "category": "Machines",
+      "cost": 1250,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Rawmix", "quantity": 20},{"item": "Aggregate", "quantity": 20}],
+          "inputs": [{"item": "Gravel", "quantity": 20},{"item": "Clay", "quantity": 20},{"item": "Limestone", "quantity": 20}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 2500
+        },
+        {
+          "outputs": [{"item": "Rawmix", "quantity": 20}],
+          "inputs": [{"item": "Clay", "quantity": 30},{"item": "Limestone", "quantity": 30}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 2500
+        },
+        {
+          "outputs": [{"item": "Aggregate", "quantity": 20}],
+          "inputs": [{"item": "Gravel", "quantity": 30}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 2500
+        }
+      ]
+    },
+
+    "paper_mill": {
+      "name": "Paper Mill",
+      "category": "Machines",
+      "cost": 80000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Paper", "quantity": 16}],
+          "inputs": [{"item": "Oak Log", "quantity": 4},{"item": "Chlorine", "quantity": 2}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 125000
+        },
+        {
+          "outputs": [{"item": "Paper", "quantity": 8}],
+          "inputs": [{"item": "Oak Log", "quantity": 4}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 62500
+        }
+      ]
+    },
+
+    "industrial_kiln": {
+      "name": "Industrial Kiln",
+      "category": "Machines",
+      "cost": 7500,
+      "pollution_per_h": 0.864,
+      "recipes": [
+        {
+          "outputs": [{"item": "Iron Mix", "quantity": 12.8}],
+          "inputs": [{"item": "Coal", "quantity": 6.64},{"item": "Iron Powder", "quantity": 6.4}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 15000
+        },
+        {
+          "outputs": [{"item": "Copper Mix", "quantity": 21.28}],
+          "inputs": [{"item": "Coal", "quantity": 13.28},{"item": "Copper Powder", "quantity": 10.64}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 15000
+        },
+        {
+          "outputs": [{"item": "Alumina", "quantity": 22.8}],
+          "inputs": [{"item": "Coke Fuel", "quantity": 16},{"item": "Crushed Bauxite", "quantity": 16}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 15000
+        },
+        {
+          "outputs": [{"item": "Iron Mix", "quantity": 16}],
+          "inputs": [{"item": "Coal", "quantity": 16},{"item": "Rock", "quantity": 16}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 15000
+        },
+        {
+          "outputs": [{"item": "Cement", "quantity": 20}],
+          "inputs": [{"item": "Coal", "quantity": 20},{"item": "Rawmix", "quantity": 30}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 15000
+        },
+        {
+          "outputs": [{"item": "Cement", "quantity": 20}],
+          "inputs": [{"item": "Coke Fuel", "quantity": 10},{"item": "Rawmix", "quantity": 30}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 15000
+        },
+        {
+          "outputs": [{"item": "Iron Mix", "quantity": 24}],
+          "inputs": [{"item": "Coke Fuel", "quantity": 8},{"item": "Rock", "quantity": 16}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 15000
+        },
+        {
+          "outputs": [{"item": "Iron Mix", "quantity": 51.2}],
+          "inputs": [{"item": "Coke Fuel", "quantity": 4},{"item": "Iron Powder", "quantity": 19.2}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 15000
+        },
+        {
+          "outputs": [{"item": "Copper Mix", "quantity": 85.12}],
+          "inputs": [{"item": "Coke Fuel", "quantity": 4},{"item": "Copper Powder", "quantity": 31.92}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 15000
+        }
+      ]
+    },
+
+
+    "lithium_brine_extractor": {
+      "name": "Lithium Brine Extractor",
+      "category": "Extractor",
+      "cost": 100000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Lithium Brine", "quantity": 120}, {"item": "Residue", "quantity": 10}],
+          "inputs": [{"item": "Water", "quantity": 60}],
+          "duration_s": 120,
+          "power_input_mf_per_s": 100000
+        }
+      ]
+    },
+
+    "lithium_ore_drill": {
+      "name": "Lithium Brine Extractor",
+      "category": "Extractor",
+      "cost": 250000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Lithium Ore", "quantity": 10}],
+          "inputs": [{"item": "Machine Oil", "quantity": 2}],
+          "duration_s": 10,
+          "power_input_mf_per_s": 1000000
+        }
+      ]
+    },
+
+    "natural_gas_well": {
+      "name": "Natural Gas Well",
+      "category": "Extractor",
+      "cost": 60000,
+      "pollution_per_h": 0.432,
+      "recipes": [
+        {
+          "outputs": [{"item": "Raw Gas", "quantity": 30}],
+          "inputs": [],
+          "duration_s": 1,
+          "power_input_mf_per_s": 45000
+        }
+      ]
+    },
+
+    "oil_fracking_tower": {
+      "name": "Natural Gas Well",
+      "category": "Extractor",
+      "cost": 60000,
+      "pollution_per_h": 0.0013,
+      "recipes": [
+        {
+          "outputs": [{"item": "Fracking Oil", "quantity": 100}],
+          "inputs": [{"item": "Sand", "quantity": 16},{"item": "Acetic Acid", "quantity": 16},{"item": "Water", "quantity": 40},{"item": "Steam", "quantity": 200}],
+          "duration_s": 8,
+          "power_input_mf_per_s": 62500
+        }
+      ]
+    },
+
+    "gas_burner": {
+      "name": "Gas Burner",
+      "category": "Machines",
+      "cost": 100000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Hot Water", "quantity": 30}],
+          "inputs": [{"item": "Refined Gas", "quantity": 20},{"item": "Water", "quantity": 30}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 0
+        },
+        {
+          "outputs": [{"item": "Hot Water", "quantity": 30}],
+          "inputs": [{"item": "Hydrogen", "quantity": 20},{"item": "Water", "quantity": 30}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 0
+        }
+      ]
+    },
+
+    "industrial_firebox": {
+      "name": "Industrial Firebox (Warning, inaccurate data)",
+      "category": "Machines",
+      "cost": 250000,
+      "pollution_per_h": 1.8,
+      "recipes": [
+        {
+          "outputs": [{"item": "Hot Water", "quantity": 12}],
+          "inputs": [{"item": "Water", "quantity": 12}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 300000
+        },
+        {
+          "outputs": [{"item": "Hot Filtered Water", "quantity": 12}],
+          "inputs": [{"item": "Filtered Water", "quantity": 12}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 300000
+        },
+        {
+          "outputs": [{"item": "Hot Distilled Water", "quantity": 12}],
+          "inputs": [{"item": "Distilled Water", "quantity": 12}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 300000
+        },
+        {
+          "outputs": [{"item": "Hot Concentrated Salt Solution", "quantity": 12},{"item": "Table Salt", "quantity": 2}],
+          "inputs": [{"item": "Concentrated Salt Solution", "quantity": 12}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 300000
+        },
+        {
+          "outputs": [{"item": "Sulfur Dioxide", "quantity": 9}],
+          "inputs": [{"item": "Liquid Sulfur", "quantity": 4.5}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 900000
+        },
+        {
+          "outputs": [{"item": "Sulfur Dioxide", "quantity": 9}],
+          "inputs": [{"item": "Oak Log", "quantity": 1}],
+          "duration_s": 1,
+          "power_input_mf_per_s": -16000
+        },
+        {
+          "outputs": [{"item": "Boron", "quantity": 1}],
+          "inputs": [{"item": "Boric Acid", "quantity": 2}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 0
+        }
+      ]
+    },
+
+    "advanced_oil_seperator": {
+      "name": "Advanced Oil Seperator",
+      "category": "Machines",
+      "cost": 1250000,
+      "pollution_per_h": 0.324,
+      "recipes": [
+        {
+          "outputs": [{"item": "Residue", "quantity": 5}, {"item": "Coke Fuel", "quantity": 4}, {"item": "Light Oil", "quantity": 20}, {"item": "Hydrogen Sulfide", "quantity": 12}],
+          "inputs": [{"item": "Steam", "quantity": 500}, {"item": "Crude Oil", "quantity": 40}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 2500000
+        },
+        {
+          "outputs": [{"item": "Residue", "quantity": 10}, {"item": "Coke Fuel", "quantity": 44}],
+          "inputs": [{"item": "Steam", "quantity": 500}, {"item": "Heavy Oil", "quantity": 40}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 2500000
+        },
+        {
+          "outputs": [{"item": "Residue", "quantity": 15}, {"item": "Heavy Oil", "quantity": 20}],
+          "inputs": [{"item": "Steam", "quantity": 500}, {"item": "Fracking Oil", "quantity": 40}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 2500000
+        },
+        {
+          "outputs": [{"item": "Residue", "quantity": 15}, {"item": "Hydrogen Sulfide", "quantity": 6}, {"item": "Heavy Oil", "quantity": 10}],
+          "inputs": [{"item": "Steam", "quantity": 500}, {"item": "Light Oil", "quantity": 40}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 2500000
+        }
+      ]
+    },
+
+    "air_seperation_unit": {
+      "name": "Air Seperation Unit",
+      "category": "Machines",
+      "cost": 1500000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Liquid Nitrogen", "quantity": 60}, {"item": "Liquid Oxygen", "quantity": 15}, {"item": "Liquid Argon", "quantity": 3}, {"item": "Residue", "quantity": 2.5}],
+          "inputs": [],
+          "duration_s": 1,
+          "power_input_mf_per_s": 20000000
+        }
+      ]
+    },
+
+    "alloyer": {
+      "name": "Alloyer",
+      "category": "Machines",
+      "cost": 999999,
+      "pollution_per_h": 0.324,
+      "recipes": [
+        {
+          "outputs": [{"item": "Molten Ferroaluminium Alloy", "quantity": 2}],
+          "inputs": [{"item": "Iron Ingot", "quantity": 4}, {"item": "Aluminium Ingot", "quantity": 2}, {"item": "Steam", "quantity": 200}],
+          "duration_s": 8,
+          "power_input_mf_per_s": 150000
+        },
+        {
+          "outputs": [{"item": "Molten Purple Gold", "quantity": 2}],
+          "inputs": [{"item": "Gold Ingot", "quantity": 1}, {"item": "Aluminium Ingot", "quantity": 2}, {"item": "Steam", "quantity": 200}],
+          "duration_s": 8,
+          "power_input_mf_per_s": 150000
+        },
+        {
+          "outputs": [{"item": "Liquid Brass", "quantity": 9}],
+          "inputs": [{"item": "Copper Ingot", "quantity": 6}, {"item": "Zinc", "quantity": 3}, {"item": "Steam", "quantity": 200}],
+          "duration_s": 8,
+          "power_input_mf_per_s": 150000
+        }
+      ]
+    },
+
+    "atmopsheric_distillation_plant": {
+      "name": "Atmospheric Distillation Plant",
+      "category": "Machines",
+      "cost": 1000000,
+      "pollution_per_h": 6.48,
+      "recipes": [
+        {
+          "outputs": [{"item": "Concentrated Salt Solution", "quantity": 64}, {"item": "Distilled Water", "quantity": 136}],
+          "inputs": [{"item": "Water", "quantity": 200}],
+          "duration_s": 8,
+          "power_input_mf_per_s": 625000
+        },
+        {
+          "outputs": [{"item": "Residue", "quantity": 10}, {"item": "Heavy Oil", "quantity": 40}, {"item": "Light Oil", "quantity": 80}, {"item": "Naphtha", "quantity": 10}, {"item": "Gasoline", "quantity": 20}, {"item": "Water-Free Gas", "quantity": 720}, {"item": "Crude Oil", "quantity": 20}],
+          "inputs": [{"item": "Fracking Oil", "quantity": 200}],
+          "duration_s": 8,
+          "power_input_mf_per_s": 625000
+        }
+      ]
+    },
+
+    "battery_charger": {
+      "name": "Battery Charger",
+      "category": "Machines",
+      "cost": 1000000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Charger Lithium-Ion Battery", "quantity": 2}],
+          "inputs": [{"item": "Uncharged Lithium-Ion Battery", "quantity": 2}],
+          "duration_s": 11,
+          "power_input_mf_per_s": 318000
+        }
+      ]
+    },
+
+    "blast_furnace": {
+      "name": "Blast Furnace",
+      "category": "Machines",
+      "cost": 60000,
+      "pollution_per_h": 0.216,
+      "recipes": [
+        {
+          "outputs": [{"item": "Steel Ingot", "quantity": 2}],
+          "inputs": [{"item": "Coal", "quantity": 4}, {"item": "Iron Ingot", "quantity": 1}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 15000
+        },
+        {
+          "outputs": [{"item": "Steel Ingot", "quantity": 6}],
+          "inputs": [{"item": "Coal", "quantity": 5}, {"item": "Iron Mix", "quantity": 3.2}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 15000
+        },
+        {
+          "outputs": [{"item": "Iron Mix", "quantity": 3.2}],
+          "inputs": [{"item": "Coal", "quantity": 1.66}, {"item": "Iron Powder", "quantity": 3.2}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 15000
+        },
+        {
+          "outputs": [{"item": "Coke Fuel", "quantity": 6}],
+          "inputs": [{"item": "Coal", "quantity": 4}, {"item": "Oak Log", "quantity": 2}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 15000
+        },
+        {
+          "outputs": [{"item": "Silicon", "quantity": 5}],
+          "inputs": [{"item": "Coal", "quantity": 4}, {"item": "Sand", "quantity": 4}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 15000
+        },
+        {
+          "outputs": [{"item": "Silicon", "quantity": 10}],
+          "inputs": [{"item": "Coke Fuel", "quantity": 4}, {"item": "Sand", "quantity": 4}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 15000
+        },
+        {
+          "outputs": [{"item": "Alumina", "quantity": 6}],
+          "inputs": [{"item": "Coke Fuel", "quantity": 4}, {"item": "Crushed Bauxite", "quantity": 4}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 15000
+        },
+        {
+          "outputs": [{"item": "Steel Ingot", "quantity": 6}],
+          "inputs": [{"item": "Coke Fuel", "quantity": 1}, {"item": "Iron Ingot", "quantity": 2}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 15000
+        },
+        { 
+          "outputs": [{"item": "Steel Ingot", "quantity": 24}],
+          "inputs": [{"item": "Coke Fuel", "quantity": 1.5}, {"item": "Iron Mix", "quantity": 19.2}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 15000
+        },
+        { 
+          "outputs": [{"item": "Iron Mix", "quantity": 12.8}],
+          "inputs": [{"item": "Coke Fuel", "quantity": 1}, {"item": "Iron Powder", "quantity": 4.8}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 15000
+        },
+        { 
+          "outputs": [{"item": "Copper Mix", "quantity": 21.28}],
+          "inputs": [{"item": "Coke Fuel", "quantity": 1}, {"item": "Copper Powder", "quantity": 7.98}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 15000
+        },
+        { 
+          "outputs": [{"item": "Iron Mix", "quantity": 6}],
+          "inputs": [{"item": "Coke Fuel", "quantity": 2}, {"item": "Rock", "quantity": 4}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 15000
+        },
+        { 
+          "outputs": [{"item": "Iron Mix", "quantity": 4}],
+          "inputs": [{"item": "Coal", "quantity": 4}, {"item": "Rock", "quantity": 4}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 15000
+        }
+      ]
+    },
+
+    "blast_furnace_MK2": {
+      "name": "Blast Furnace MK2",
+      "category": "Machines",
+      "cost": 5000000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Steel Ingot", "quantity": 200}],
+          "inputs": [{"item": "Coal", "quantity": 300}, {"item": "Iron Ingot", "quantity": 100}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 1250000
+        },
+        {
+          "outputs": [{"item": "Coke Fuel", "quantity": 300}],
+          "inputs": [{"item": "Coal", "quantity": 200}, {"item": "Oak Log", "quantity": 50}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 1250000
+        },
+        {
+          "outputs": [{"item": "Coke Fuel", "quantity": 300}],
+          "inputs": [{"item": "Coke Fuel", "quantity": 200}, {"item": "Oak Log", "quantity": 10}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 1250000
+        },
+        {
+          "outputs": [{"item": "Steel Ingot", "quantity": 300}],
+          "inputs": [{"item": "Coke Fuel", "quantity": 50}, {"item": "Iron Ingot", "quantity": 100}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 1250000
+        }
+      ]
+    },
+
+    "bottling_plant": {
+      "name": "Bottling Plant",
+      "category": "Machines",
+      "cost": 100000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Water Bottle", "quantity": 1}],
+          "inputs": [{"item": "Filtered Water", "quantity": 8}, {"item": "Plastic Bottle", "quantity": 1}],
+          "duration_s": 3.5,
+          "power_input_mf_per_s": 2860
+        },
+        {
+          "outputs": [{"item": "Cheap Water Bottle", "quantity": 1}],
+          "inputs": [{"item": "Water", "quantity": 8}, {"item": "Plastic Bottle", "quantity": 1}],
+          "duration_s": 3.5,
+          "power_input_mf_per_s": 2860
+        },
+        {
+          "outputs": [{"item": "Residue Bottle", "quantity": 1}],
+          "inputs": [{"item": "Residue", "quantity": 8}, {"item": "Plastic Bottle", "quantity": 1}],
+          "duration_s": 3.5,
+          "power_input_mf_per_s": 2860
+        },
+        {
+          "outputs": [{"item": "Refined Diesel Bottle", "quantity": 1}],
+          "inputs": [{"item": "Refined Diesel", "quantity": 8}, {"item": "Plastic Bottle", "quantity": 1}],
+          "duration_s": 3.5,
+          "power_input_mf_per_s": 2860
+        },
+        {
+          "outputs": [{"item": "Oil Bottle", "quantity": 1}],
+          "inputs": [{"item": "Crude Oil", "quantity": 8}, {"item": "Plastic Bottle", "quantity": 1}],
+          "duration_s": 3.5,
+          "power_input_mf_per_s": 2860
+        }
+      ]
+    },
+
+    "chemical_reactor": {
+      "name": "Chemical Reactor",
+      "category": "Machines",
+      "cost": 750000,
+      "pollution_per_h": 1.62,
+      "recipes": [
+        {
+          "outputs": [{"item": "Residue", "quantity": 4}, {"item": "Rubber", "quantity": 8}],
+          "inputs": [{"item": "Naphtha", "quantity": 10}, {"item": "Heavy Oil", "quantity": 16}],
+          "duration_s": 6,
+          "power_input_mf_per_s": 500000
+        },
+        {
+          "outputs": [{"item": "Sulferic Acid", "quantity": 15}],
+          "inputs": [{"item": "Sulfur Trioxide", "quantity": 20}, {"item": "Water", "quantity": 20}],
+          "duration_s": 6,
+          "power_input_mf_per_s": 500000
+        },
+        {
+          "outputs": [{"item": "Sulferic Acid", "quantity": 15}],
+          "inputs": [{"item": "Sulfur Trioxide", "quantity": 20}, {"item": "Water", "quantity": 20}, {"item": "Sulferic Acid", "quantity": 2}],
+          "duration_s": 3,
+          "power_input_mf_per_s": 1000000
+        },
+        {
+          "outputs": [{"item": "Sulferic Acid", "quantity": 17}],
+          "inputs": [{"item": "Sulfur Trioxide", "quantity": 20}, {"item": "Distilled Water", "quantity": 20}, {"item": "Sulferic Acid", "quantity": 2}],
+          "duration_s": 3,
+          "power_input_mf_per_s": 1000000
+        },
+        {
+          "outputs": [{"item": "GasolineE10", "quantity": 10}],
+          "inputs": [{"item": "Gasoline", "quantity": 9}, {"item": "Ethanol", "quantity": 1}],
+          "duration_s": 6,
+          "power_input_mf_per_s": 500000
+        },
+        {
+          "outputs": [{"item": "Leaded Gasoline", "quantity": 10}],
+          "inputs": [{"item": "Gasoline", "quantity": 9}, {"item": "Tetraethyllead", "quantity": 1}],
+          "duration_s": 6,
+          "power_input_mf_per_s": 500000
+        },
+        {
+          "outputs": [{"item": "Gold Ingot", "quantity": 1}],
+          "inputs": [{"item": "Microchip Scrap", "quantity": 5}, {"item": "Sulferic Acid", "quantity": 5}],
+          "duration_s": 6,
+          "power_input_mf_per_s": 500000
+        },
+        {
+          "outputs": [{"item": "Dirty Lithium Sulfate", "quantity": 4}],
+          "inputs": [{"item": "Lithium Brine", "quantity": 6}, {"item": "Sulferic Acid", "quantity": 0.9}],
+          "duration_s": 2,
+          "power_input_mf_per_s": 1500000
+        },
+        {
+          "outputs": [{"item": "Lithium Carbonate", "quantity": 4}],
+          "inputs": [{"item": "Water", "quantity": 10}, {"item": "Lithium Sulfate", "quantity": 8}, {"item": "Sodium Carbonate", "quantity": 4}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 750000
+        },
+        {
+          "outputs": [{"item": "Lithium Sulfate", "quantity": 4}],
+          "inputs": [{"item": "Sulferic Acid", "quantity": 1.4}, {"item": "Lithium Ore", "quantity": 4}, {"item": "Sodium Carbonate", "quantity": 2}],
+          "duration_s": 2,
+          "power_input_mf_per_s": 1500000
+        },
+        {
+          "outputs": [{"item": "Hydrochloric Acid", "quantity": 4}, {"item": "Residue", "quantity": 2}],
+          "inputs": [{"item": "Sulferic Acid", "quantity": 2}, {"item": "Table Salt", "quantity": 4}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 1500000
+        },
+        {
+          "outputs": [{"item": "Zinc Sulfate", "quantity": 15}, {"item": "Residue", "quantity": 5}],
+          "inputs": [{"item": "Raw Zinc", "quantity": 20}, {"item": "Sulferic Acid", "quantity": 2}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 600000
+        },
+        {
+          "outputs": [{"item": "Hydrochloric Acid", "quantity": 5}],
+          "inputs": [{"item": "Chlorine", "quantity": 20}, {"item": "Hydrogen", "quantity": 20}, {"item": "Distilled Water", "quantity": 5}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 600000
+        },
+        {
+          "outputs": [{"item": "Treated Raw Iron", "quantity": 20}, {"item": "Residue", "quantity": 4}],
+          "inputs": [{"item": "Raw Iron", "quantity": 20}, {"item": "Hydrochloric Acid", "quantity": 1}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 600000
+        },
+        {
+          "outputs": [{"item": "Treated Raw Copper", "quantity": 20}, {"item": "Residue", "quantity": 4}],
+          "inputs": [{"item": "Raw Copper", "quantity": 20}, {"item": "Hydrochloric Acid", "quantity": 1}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 600000
+        },
+        {
+          "outputs": [{"item": "Galvenized Steel", "quantity": 20}],
+          "inputs": [{"item": "Zinc", "quantity": 5}, {"item": "Steel Ingot", "quantity": 20}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 600000
+        },
+        {
+          "outputs": [{"item": "Tetraethyllead", "quantity": 10}],
+          "inputs": [{"item": "Ethanol", "quantity": 4}, {"item": "Lead Ingot", "quantity": 1}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 600000
+        },
+        {
+          "outputs": [{"item": "Powdered Tungsten Carbide", "quantity": 2}],
+          "inputs": [{"item": "Hydrogen", "quantity": 20}, {"item": "Powdered Tungsten", "quantity": 4}, {"item": "Black Dye", "quantity": 3}],
+          "duration_s": 6,
+          "power_input_mf_per_s": 600000
+        },
+        {
+          "outputs": [{"item": "Gunpowder", "quantity": 4}],
+          "inputs": [{"item": "Water", "quantity": 10}, {"item": "Sulfur", "quantity": 8}, {"item": "Coal", "quantity": 4}],
+          "duration_s": 6,
+          "power_input_mf_per_s": 600000
+        },
+        {
+          "outputs": [{"item": "Sulfur", "quantity": 1}],
+          "inputs": [{"item": "Filtered Water", "quantity": 6}, {"item": "Treated Rock", "quantity": 2}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 750000
+        },
+        {
+          "outputs": [{"item": "Zirconium Chloride", "quantity": 4}, {"item": "Residue", "quantity": 1}],
+          "inputs": [{"item": "Chlorine", "quantity": 2}, {"item": "Raw Zirconium", "quantity": 2}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 750000
+        },
+        {
+          "outputs": [{"item": "Zirconium Dioxide", "quantity": 2}, {"item": "Hydrochloric Acid", "quantity": 3}],
+          "inputs": [{"item": "Distilled Water", "quantity": 6}, {"item": "Zirconium Chloride", "quantity": 2}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 750000
+        },
+        {
+          "outputs": [{"item": "Residue", "quantity": 2}, {"item": "Hydrofluoric Acid", "quantity": 1.8}],
+          "inputs": [{"item": "Sulferic Acid", "quantity": 0.8}, {"item": "Deep Earth Fragment", "quantity": 1}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 750000
+        }
+      ]
+    },
+
+    "coal_liquefaciton_plant": {
+      "name": "Coal Liquefaction Plant",
+      "category": "Machines",
+      "cost": 750000,
+      "pollution_per_h": 6.48,
+      "recipes": [
+        {
+          "outputs": [{"item": "Residue", "quantity": 10}, {"item": "Heavy Oil", "quantity": 40}, {"item": "Light Oil", "quantity": 30}],
+          "inputs": [{"item": "Coal", "quantity": 40}, {"item": "Crude Oil", "quantity": 10}, {"item": "Steam", "quantity": 200}],
+          "duration_s": 11,
+          "power_input_mf_per_s": 1000000
+        }
+      ]
+    },
+
+    "condenser": {
+      "name": "Condenser",
+      "category": "Machines",
+      "cost": 75000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Crude Oil", "quantity": 0.3}, {"item": "Water", "quantity": 1.5}, {"item": "Water-Free Gas", "quantity": 30}],
+          "inputs": [{"item": "Raw Gas", "quantity": 60}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 21000
+        }
+      ]
+    },
+
+    "gas_refinery": {
+      "name": "Gas Refinery",
+      "category": "Machines",
+      "cost": 175000,
+      "pollution_per_h": 0.216,
+      "recipes": [
+        {
+          "outputs": [{"item": "Refined Gas", "quantity": 60}, {"item": "Residue", "quantity": 3}],
+          "inputs": [{"item": "Water-Free Gas", "quantity": 90}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 60000
+        }
+      ]
+    },
+
+    "lng_plant": {
+      "name": "LNG Plant",
+      "category": "Machines",
+      "cost": 1250000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "LNG", "quantity": 6.6}],
+          "inputs": [{"item": "Refined Gas", "quantity": 120}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 2250000
+        }
+      ]
+    },
+
+    "plastic_molding_machine": {
+      "name": "Plastic Molding Machine",
+      "category": "Machines",
+      "cost": 100000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Plastic Bottle", "quantity": 2}],
+          "inputs": [{"item": "Plastic Pellets", "quantity": 20}],
+          "duration_s": 7,
+          "power_input_mf_per_s": 14000
+        },
+        {
+          "outputs": [{"item": "Plastic Casing", "quantity": 2}],
+          "inputs": [{"item": "Plastic Pellets", "quantity": 20}],
+          "duration_s": 7,
+          "power_input_mf_per_s": 14000
+        }
+      ]
+    },
+
+    "industrial_plastic_molder": {
+      "name": "Industrial Plastic Molder",
+      "category": "Machines",
+      "cost": 200000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Plastic Bottle", "quantity": 6}],
+          "inputs": [{"item": "Plastic Pellets", "quantity": 60}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 20000
+        },
+        {
+          "outputs": [{"item": "Plastic Casing", "quantity": 6}],
+          "inputs": [{"item": "Plastic Pellets", "quantity": 120}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 20000
+        },
+        {
+          "outputs": [{"item": "Hardened Plastic Casing", "quantity": 6}],
+          "inputs": [{"item": "Hardened Plastic Pellets", "quantity": 60}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 20000
+        }
+      ]
+    },
+
+    "plastic_production_facility": {
+      "name": "Plastic Production Facility",
+      "category": "Machines",
+      "cost": 100000,
+      "pollution_per_h": 0.432,
+      "recipes": [
+        {
+          "outputs": [{"item": "Plastic Pellets", "quantity": 80}],
+          "inputs": [{"item": "MEG", "quantity": 1}, {"item": "PTA", "quantity": 1}],
+          "duration_s": 6,
+          "power_input_mf_per_s": 80000
+        }
+      ]
+    },
+
+    "plastic_refinery": {
+      "name": "Plastic Refinery",
+      "category": "Machines",
+      "cost": 100000,
+      "pollution_per_h": 0.216,
+      "recipes": [
+        {
+          "outputs": [{"item": "Ethanol", "quantity": 2}],
+          "inputs": [{"item": "Crude Oil", "quantity": 1}, {"item": "Water", "quantity": 4}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 60000
+        },
+        {
+          "outputs": [{"item": "PTA", "quantity": 2}],
+          "inputs": [{"item": "Paraxylene", "quantity": 1}, {"item": "Acetic Acid", "quantity": 4}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 60000
+        }
+      ]
+    },
+
+    "oxidation_plant": {
+      "name": "Oxidation Plant",
+      "category": "Machines",
+      "cost": 200000,
+      "pollution_per_h": 0,
+      "recipes": [
+        {
+          "outputs": [{"item": "Acetic Acid", "quantity": 60}],
+          "inputs": [{"item": "Ethanol", "quantity": 60}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 500000
+        },
+        {
+          "outputs": [{"item": "MEG", "quantity": 18}],
+          "inputs": [{"item": "Ethylene", "quantity": 24}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 500000
+        },
+        {
+          "outputs": [{"item": "Liquid Sulfur", "quantity": 30}],
+          "inputs": [{"item": "Hydrogen Sulfide", "quantity": 20}],
+          "duration_s": 20,
+          "power_input_mf_per_s": 500000
+        },
+        {
+          "outputs": [{"item": "Sulfur Trioxide", "quantity": 40}],
+          "inputs": [{"item": "Sulfur Dioxide", "quantity": 40}],
+          "duration_s": 12,
+          "power_input_mf_per_s": 833000
+        },
+        {
+          "outputs": [{"item": "MEG", "quantity": 18}],
+          "inputs": [{"item": "Ethylene", "quantity": 24}, {"item": "Oxygen", "quantity": 5}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 1000000
+        },
+        {
+          "outputs": [{"item": "Acetic Acid", "quantity": 60}],
+          "inputs": [{"item": "Ethanol", "quantity": 60}, {"item": "Oxygen", "quantity": 5}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 1000000
+        },
+        {
+          "outputs": [{"item": "Liquid Sulfur", "quantity": 30}],
+          "inputs": [{"item": "Hydrogen Sulfide", "quantity": 20}, {"item": "Oxygen", "quantity": 5}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 1000000
+        },
+        {
+          "outputs": [{"item": "Sulfur Trioxide", "quantity": 40}],
+          "inputs": [{"item": "Sulfur Dioxide", "quantity": 40}, {"item": "Oxygen", "quantity": 5}],
+          "duration_s": 3,
+          "power_input_mf_per_s": 1670000
+        }
+      ]
+    },
+
+    "steam_cracking_plant": {
+      "name": "Steam Cracking Plant",
+      "category": "Machines",
+      "cost": 150000,
+      "pollution_per_h": 0.432,
+      "recipes": [
+        {
+          "outputs": [{"item": "Paraxylene", "quantity": 2}, {"item": "Ethylene", "quantity": 3}],
+          "inputs": [{"item": "Crude Oil", "quantity": 2}, {"item": "Steam", "quantity": 150}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 60000
+        },
+        {
+          "outputs": [{"item": "Crude Diesel", "quantity": 12}, {"item": "Residue", "quantity": 3}],
+          "inputs": [{"item": "Light Oil", "quantity": 15}, {"item": "Steam", "quantity": 150}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 60000
+        },
+        {
+          "outputs": [{"item": "Light Oil", "quantity": 12}, {"item": "Residue", "quantity": 8}],
+          "inputs": [{"item": "Heavy Oil", "quantity": 20}, {"item": "Steam", "quantity": 150}],
+          "duration_s": 4,
+          "power_input_mf_per_s": 60000
+        },
+        {
+          "outputs": [{"item": "Naphtha", "quantity": 15}, {"item": "Residue", "quantity": 5}],
+          "inputs": [{"item": "Heavy Oil", "quantity": 20}, {"item": "Hydrogen", "quantity": 3}],
+          "duration_s": 3,
+          "power_input_mf_per_s": 60000
+        },
+        {
+          "outputs": [{"item": "Light Oil", "quantity": 15}, {"item": "Residue", "quantity": 5}],
+          "inputs": [{"item": "Naphtha", "quantity": 20}, {"item": "Hydrogen", "quantity": 3}],
+          "duration_s": 3,
+          "power_input_mf_per_s": 60000
+        }
+      ]
+    },
+
+    "gold_acid_refinery": {
+      "name": "Gold Acid Refinery",
+      "category": "Machines",
+      "cost": 1000000,
+      "pollution_per_h": 0.216,
+      "recipes": [
+        {
+          "outputs": [{"item": "Residue", "quantity": 8}, {"item": "10 Karat Gold", "quantity": 1}],
+          "inputs": [{"item": "Acetic Acid", "quantity": 2}, {"item": "Water", "quantity": 6}, {"item": "Rich Soil", "quantity": 1}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 100000
+        },
+        {
+          "outputs": [{"item": "Residue", "quantity": 8}, {"item": "18 Karat Gold", "quantity": 1}],
+          "inputs": [{"item": "Acetic Acid", "quantity": 2}, {"item": "Water", "quantity": 6}, {"item": "12 Karat Gold", "quantity": 1}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 100000
+        },
+        {
+          "outputs": [{"item": "Residue", "quantity": 8}, {"item": "18 Karat Gold", "quantity": 1}],
+          "inputs": [{"item": "Sulferic Acid", "quantity": 4}, {"item": "Water", "quantity": 4}, {"item": "Rich Soil", "quantity": 1}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 100000
+        },
+        {
+          "outputs": [{"item": "Residue", "quantity": 8}, {"item": "Bauxite Residue", "quantity": 1}],
+          "inputs": [{"item": "Sulferic Acid", "quantity": 1}, {"item": "Water", "quantity": 5}, {"item": "Shallow Earth Fragment", "quantity": 4}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 100000
+        },
+        {
+          "outputs": [{"item": "Residue", "quantity": 4}, {"item": "Raw Zinc", "quantity": 4}],
+          "inputs": [{"item": "Acetic Acid", "quantity": 2}, {"item": "Water", "quantity": 5}, {"item": "Medium Earth Fragment", "quantity": 2}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 100000
+        },
+        {
+          "outputs": [{"item": "Residue", "quantity": 6}, {"item": "Coal", "quantity": 10}],
+          "inputs": [{"item": "Sulferic Acid", "quantity": 2}, {"item": "Water", "quantity": 5}, {"item": "Medium Earth Fragment", "quantity": 3}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 100000
+        },
+        {
+          "outputs": [{"item": "Lithium Brine", "quantity": 10}, {"item": "Rich Soil", "quantity": 5}],
+          "inputs": [{"item": "Hydrochloric Acid", "quantity": 2}, {"item": "Water", "quantity": 5}, {"item": "Medium Earth Fragment", "quantity": 5}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 100000
+        },
+        {
+          "outputs": [{"item": "Residue", "quantity": 5}, {"item": "Coal", "quantity": 10}],
+          "inputs": [{"item": "Hydrochloric Acid", "quantity": 2}, {"item": "Water", "quantity": 5}, {"item": "Deep Earth Fragment", "quantity": 5}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 100000
+        },
+        {
+          "outputs": [{"item": "Residue", "quantity": 5}, {"item": "Coal", "quantity": 20}],
+          "inputs": [{"item": "Sulferic Acid", "quantity": 2}, {"item": "Water", "quantity": 5}, {"item": "Deep Earth Fragment", "quantity": 5}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 100000
+        },
+        {
+          "outputs": [{"item": "Residue", "quantity": 5}, {"item": "Coal", "quantity": 5}],
+          "inputs": [{"item": "Acetic Acid", "quantity": 2}, {"item": "Water", "quantity": 5}, {"item": "Deep Earth Fragment", "quantity": 5}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 100000
+        },
+        {
+          "outputs": [{"item": "Residue", "quantity": 5}, {"item": "8 Karat Gold", "quantity": 5}],
+          "inputs": [{"item": "Acetic Acid", "quantity": 1}, {"item": "Water", "quantity": 5}, {"item": "Treated Rock", "quantity": 5}],
+          "duration_s": 5,
+          "power_input_mf_per_s": 100000
+        }
+      ]
+    },
+
+    "industrial_diesel_refinery": {
+      "name": "Industrial Diesel Refinery",
+      "category": "Machines",
+      "cost": 150000,
+      "pollution_per_h": 0.32,
+      "recipes": [
+        {
+          "outputs": [{"item": "Poor Quality Diesel", "quantity": 1.8}, {"item": "Residue", "quantity": 0.2}],
+          "inputs": [{"item": "Crude Diesel", "quantity": 2}, {"item": "Machine Oil", "quantity": 0.2}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 750000
+        },
+        {
+          "outputs": [{"item": "Diesel", "quantity": 1.8}, {"item": "Residue", "quantity": 0.2}],
+          "inputs": [{"item": "Poor Quality Diesel", "quantity": 2}, {"item": "Machine Oil", "quantity": 0.2}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 750000
+        },
+        {
+          "outputs": [{"item": "Refined Diesel", "quantity": 1.8}, {"item": "Residue", "quantity": 0.2}],
+          "inputs": [{"item": "Diesel", "quantity": 2}, {"item": "Machine Oil", "quantity": 0.2}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 750000
+        },
+        {
+          "outputs": [{"item": "Gasoline", "quantity": 1.8}, {"item": "Residue", "quantity": 0.2}],
+          "inputs": [{"item": "Refined Diesel", "quantity": 2}, {"item": "Machine Oil", "quantity": 0.2}],
+          "duration_s": 1,
+          "power_input_mf_per_s": 750000
+        }
+      ]
+    }
+  }
+}
